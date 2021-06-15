@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Libre</title>
+    <link href = "https://fonts.googleapis.com/css2? family = Roboto: wght @ 300; 400; 700 & display = swap "
+    rel =" stylesheet ">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/f519fb565c.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/images/logo-mercado-liebre.svg" class="logo">
+            <h2 class="copy-header">
+                <i class="fas fa-hand-holding-usd"></i>
+                Compra en cuotas y con tarjeta de credito
+            </h2>
+        </div>
+        <a href="#" class="hamburguer-button">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href="#">Creá tu cuenta <i class="far fa-credit-card"></i></a></li>
+                <li><a href="#">Ingresá <i class="far fa-sign-in-alt"></i> </a></li>
+                <li><a href="#">Mis compras <i class="far fa-shopping-basket"></i> </a></li>
+            </ul>        
+        </nav>
+    </header>
+    <!-- Formulario-->
+    <form action="/crear-producto" method="POST" class="create-form">
+        <div class="control-formulario">
+            <label>Nombre del producto:</label>
+            <input type="text"name="nombre" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Precio:</label>
+            <input type="text"name="precio" placeholder="12345.123" class="control">
+        </div> 
+        <div class="control-formulario">
+            <label>Categoria:</label>
+            <select name="categoria" class="control">
+                <option value="hogar">Hogar</option>
+                <option value="electro">Hogar</option>
+                <option value="indumentaria">Indumentaria</option>
+            </select>
+        </div>
+        <div class="control-formulario">
+            <label>Ciudad:</label>
+            <select name="ciudad" class="control">
+                <option value="baires">Buenos Aires</option>
+                <option value="ros">Rosario</option>
+                <option value="mdz">Mendoza</option>
+            </select>
+        </div>        
+        <div class="control-formulario">
+            <label>Descripción</label>
+            <textarea name="descripción" class="control"></textarea>
+        </div>
+        <div class="control-formulario">
+            <label>Está en oferta:</label>
+            <input type="radio"name="enOferta">
+        </div>                
+
+        <button type="reset" class="boton-formulario">Borrar</button>
+        <button type="submit" class="boton-formulario">Guardar</button>
+    </form>
+    <article class="product">
+        <img src="/images/img-iphone-11.jpg" alt="Imagen de Iphone-11">
+        <h2>iPhone 11</h2>
+    </article>
+    <article class="product">
+        <img src="/images/img-iphone-11.jpg" alt="Imagen de Iphone-11">
+        <h2>iPhone 11</h2>
+    </article>
+    <article class="product">
+        <img src="/images/img-iphone-11.jpg" alt="Imagen de Iphone-11">
+        <h2>iPhone 11</h2>
+    </article>        
+</body>
+</html>
