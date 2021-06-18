@@ -12,6 +12,7 @@ body {
     position: fixed;
     top:0;
     z-index: 100;
+    width:100%
 }
 .hamburguer-button {
     background-color: #03264C;
@@ -81,6 +82,8 @@ body {
     padding: 0 15px;
     position: relative;
     margin:30px 15px;
+    width: 70%;
+    height: 70%;
 }
 .product img {
     width: 100%;
@@ -161,6 +164,7 @@ body {
     .main-navbar a {
         font-size: 19px;
     }
+
     
 }
 
@@ -396,4 +400,5 @@ label span, form span {
         height: fit-content;
         width: 100%;
     }
+
 }
